@@ -1,10 +1,12 @@
 let documentBody = document.querySelector('body');
 documentBody.style.backgroundImage = "url('./assets/testChamber.jpg')";
+documentBody.style.backgroundColor = 'orange'
 documentBody.style.backgroundSize = 'cover';
 documentBody.style.backgroundRepeat = 'no-repeat'
 
 let buttonElement = document.createElement(`button`);
-buttonElement.append("Push Me!");
+buttonElement.append("Remove the Body!");
+
 documentBody.append(buttonElement);
 
 let documentMain = document.createElement('main');
@@ -21,6 +23,8 @@ klaxionBeatLink.target = "blank"
 klaxionBeatLink.append("Hazardous Environment Suit activated.")
 klaxionBeatLink.style.fontSize = '2em'
 klaxionBeatLink.style.color = 'orange'
+klaxionBeatLink.style.display = 'block'
+klaxionBeatLink.style.margin = '10px auto'
 documentMain.append(klaxionBeatLink);
 
 buttonElement.addEventListener('click', function() {
@@ -41,7 +45,7 @@ removeElementButton.addEventListener('click', function() {
 })
 
 let addElementInput = document.createElement('input');
-addElementInput.placeholder = "enter element type...";
+addElementInput.placeholder = "Have something to say?";
 documentBody.append(addElementInput); 
 let addElementButton = document.createElement('button');
 addElementButton.append('Create Element!');
