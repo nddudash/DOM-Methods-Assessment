@@ -21,6 +21,7 @@ let klaxionBeatLink = document.createElement('a');
 klaxionBeatLink.href = "https://www.youtube.com/watch?v=IXyVMQa6MeY"
 klaxionBeatLink.target = "blank"
 klaxionBeatLink.append("Hazardous Environment Suit activated.")
+klaxionBeatLink.classList.add(`link`);
 klaxionBeatLink.style.fontSize = '2em'
 klaxionBeatLink.style.color = 'orange'
 klaxionBeatLink.style.display = 'block'
